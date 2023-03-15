@@ -1,6 +1,9 @@
+#I borrowed some of this code from Andrew Piper and amended it for my own purposes.
+
+
 #to train on one data set and run on another
 #load training data and relabel corpus
-setwd("~/Library/Mobile Documents/com~apple~CloudDocs/UVA/Historical Novel Model/Historical Novel Explorations")
+setwd("set WD")
 histNovelDF<-read.csv("historical_novel_list.csv", stringsAsFactors = T)
 notHistNovelDF<-read.csv("non_historical_novel_list.csv", stringsAsFactors = T)
 histNovelDF$corpus <- c("HIST")
